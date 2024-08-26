@@ -1,13 +1,17 @@
 NAME & AUTHOR
+
     Shell name : myshell 
     Author Name: Diana Williams Oshun
 DESCRIPTION
+
     I made a basic command-line shell written in C called 'myshell'. The shell supports interanl and external commands, i/o redirection, bacground execution, batchfile execution ect.
 START
+
     1. Make sure you are in the same folder as myshell.c, utility.c and myshell.h files.
     2. Run the command 'make myshell' to compile the shell.
     3. Run the command './myshell' to run the shell.
 COMMANDS
+
     A Unix command is an instruction that is typed into the terminal of the myshell programme.
     ```
     HELP
@@ -71,6 +75,7 @@ COMMANDS
 
     ```
 ENVIRONMENT CONCEPTS
+
     In my shell, Environment concepts refer to the environment variables that are usually set by the OS/Shell already. The string values are composed by 'name=/value' . The 'environ' command can be run to output all the environment strings to the user.
     ```
         ENVIRON
@@ -81,6 +86,7 @@ ENVIRONMENT CONCEPTS
 
     
 I/O REDIRECTION
+
     In  my shell, I/O redirection refers to input and output redirection.
     INPUT REDIRECTION (<)
         DESCRIPTION
@@ -118,6 +124,7 @@ I/O REDIRECTION
             ./myshell <arg1> < 'input_file' >> 'output_file'
             ```
 PROCESS CONCEPT
+
     In my shell, there are two differnt ways a command can be run that is either in the foreground or background.
     FOREGROUND
         DESCRIPTION
@@ -138,6 +145,7 @@ PROCESS CONCEPT
             <command>&
             ```
 BATCHFILE MODE
+
     DESCRIPTION
         In my shell, Batchfile mode consists of a batchfile that can be a ".txt" or ".sh" where pre-written commands are. The shell will take the commands from the batch file and run them all sequentially.
     EXECUTION
@@ -147,6 +155,7 @@ BATCHFILE MODE
         ./myshell batchfile.sh
         ```
 REFERENCES
+
     These are the references that I used to create my shell:
     1. Silberschatz, Abraham, et al. Operating System Concepts: Essentials. John Wiley & Sons, Incorporated, 2018.
     2. Bach, Maurice J. The Design of the UNIX Operating System. Pearson Education, 2016.
